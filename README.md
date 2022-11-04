@@ -1,3 +1,3 @@
-# [https://kodlama.io](https://www.kodlama.io/)
+# [JavaKamp2022](https://www.kodlama.io/)
 kodlama.io 2022
 
