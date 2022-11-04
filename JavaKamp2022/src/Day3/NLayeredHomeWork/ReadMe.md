@@ -5,6 +5,6 @@ Simulate multiple logging types.
 
 Simulate that we have both Jdbc and Hibernate.
 
-Course Name and ID can not repeat,
-Category Name and ID can not repeat,
-Course prices can not be less than Zero.
+- Course Name and ID can not repeat,
+- Category Name and ID can not repeat,
+- Course prices can not be less than Zero.
