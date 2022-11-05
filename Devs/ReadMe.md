@@ -1,4 +1,4 @@
-# [Kodlama.io Kamp2022 Week 4] (https://www.kodlama.io)
+# [Kodlama.io Kamp2022 Week 4](https://www.kodlama.io)
 
 Req 1 : Sistemde programlama dilleri tutulmalıdır.
 
