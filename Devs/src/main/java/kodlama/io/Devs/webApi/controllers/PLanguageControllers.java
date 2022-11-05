@@ -45,7 +45,7 @@ public class PLanguageControllers {
 		
 		_languageService.delete(id);
 	}
-	@PutMapping("updade")
+	@PutMapping("update")
 	void update(int id , PLanguage language) throws Exception {
 		_languageService.update(id,language);
 	}
