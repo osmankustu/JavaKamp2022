@@ -7,6 +7,7 @@ Req 1 : Sistemde programlama dilleri tutulmalıdır.
 - Programlama dili boş geçilemez. (Validation kullanmadan, kod yazarak algoritmik çözünüz)
 
 08/11/2022
+
 Req 2 : Sisteme programlama dillerine ait alt teknolojiler eklenebilmeli, silinebilmeli. güncellenebilmeli, listelenebilmelidir.
 
 - Örneğin; Java : Spring, JSP.
