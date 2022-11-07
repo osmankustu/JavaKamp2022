@@ -11,43 +11,48 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlama.io.Devs.business.abstracts.PLanguageService;
-import kodlama.io.Devs.entites.PLanguage;
+import kodlama.io.Devs.business.requests.PLanguageRequest.CreatePLangugeRequest;
+import kodlama.io.Devs.business.responses.PLanguageResponse.GetAllPLanguageResponse;
+import kodlama.io.Devs.business.responses.PLanguageResponse.GetByIdPLanguageResponse;
 
 @RestController
 @RequestMapping("/api/PLanguage")
 public class PLanguageControllers {
 
 	private PLanguageService _languageService;
+
 	@Autowired
 	public PLanguageControllers(PLanguageService languageService) {
 		this._languageService = languageService;
 	}
-	
+
 	@GetMapping("getall")
-	List<PLanguage> getAll(){
-		
+	List<GetAllPLanguageResponse> getAll() {
+
 		return _languageService.getAll();
 	}
-	
+
 	@PostMapping("add")
-	void add(PLanguage language) throws Exception{
-		
-		_languageService.add(language);
+	void add(CreatePLangugeRequest request) throws Exception {
+
+		_languageService.add(request);
 	}
-	
+
 	@GetMapping("getbyıd")
-	PLanguage getById(int id) {
-		
+	List<GetByIdPLanguageResponse> getById(int id) {
+
 		return _languageService.getById(id);
 	}
+
 	@DeleteMapping("delete")
 	void Delete(int id) {
-		
+
 		_languageService.delete(id);
 	}
-	@PutMapping("update")
-	void update(int id , PLanguage language) throws Exception {
-		_languageService.update(id,language);
+
+	@PutMapping("uptade")
+	void update(int id, CreatePLangugeRequest request) throws Exception {
+		_languageService.update(id, request);
 	}
-	
+
 }
